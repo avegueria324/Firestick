@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+hr.breakpoint {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/* Navigation Styles */
+
+#home {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/main-banner.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .8;
+}
+@media (max-width: 680px) {
+  #home {
+    background: url(../images/mobile-banner.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: .8;
+  }
+}
+
+#our-story {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/story-banner.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .8;
+}
+@media (max-width: 680px) {
+  #our-story {
+    background: url(../images/mobile-story-banner.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: .8;
+  }
+}
+
+#mainLogo {
+  height: 100px;
+  width: auto;
+}
+ul.nav-list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  text-transform: uppercase;
+}
+.nav-items {
+  padding: 10px;
+  display: inline;
+}
+ul.nav-list li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1em;
+  vertical-align: middle;
+}
+ul.nav-list li a.navLinks:hover {
+  color: black;
+}
+ul.nav-list li.icon {
+  display: none;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Nav */
+@media screen and (min-width:680px) {
+  ul.nav-list #home-link {
+    display:none;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.nav-list li:not(.icon) {
+    display: none;
+  }
+  ul.nav-list li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.nav-list.responsive {
+    position: relative;
+  }
+  ul.nav-list #logo {
+    display: none;
+  }
+  ul.nav-list.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+ul.nav-list.responsive li {
+  float: none;
+  display: inline;
+}
+ul.nav-list.responsive li a {
+  display: block;
+  text-align: left;
+}
+ul.nav-list.responsive {
+  background: rgba(59, 64, 61, 0.95);
+}
+div.section {
+  margin-top: 50px;
+}
+
+#instagram {
+	text-align:center;
+}
+.ig-posts {
+	margin:5px;
+}
+
+/*home page text */
+
+.home {
+  font-family: 'Raleway', sans-serif;
+}
+h1.home {
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 1.7em;
+}
+h3.home {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+}
+p.home {
+  color: #4E524F;
+  letter-spacing: .75px;
+  text-align: center;
+}
+
+a.internal-links {
+  text-decoration:none;
+  color: #B22F00;
+}
+a.internal-links:hover{
+  color:black;
+  font-size:1.1em;
+}
+/*social media buttons */
+
+a.socialMedia {
+  color: white;
+}
+
+/*Images */
+
+img.page-images {
+  max-width:100%;
+  box-shadow: 1px 1px 5px #888888;;
+}
+
+/*Footer*/
+
+h3.footer {
+  color: white;
+}
+p.footer {
+  color: white;
+}
+div.footer {
+  margin-top: 25px;
+  background-color: #434275;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+a.footer {
+  text-decoration: none;
+  color: white;
+}
+a.footer:hover {
+  color: black;
+}
+#top-button {
+  display: flex;
+  justify-content: center;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(235, 235, 235, 0.80);
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+}
+.back-to-top:hover {
+  background-color: rgba(135, 135, 135, 0.50);
+}
